@@ -1,0 +1,125 @@
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.todo_list{
+    width: 100%;
+}
+.task-list{
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.task-list h2{
+    width: 100%;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.task-list ul{
+    width: 100%;
+}
+.task-list ul li{
+    list-style: none;
+    background: #818cf8;
+    padding: 20px 40px 50px 20px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+.task-list ul li button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+   
+}
+
+.task-list .add_new-task{
+    background: #4f46e5;
+    height: 50px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.task-list .add_new-task i{
+    font-size: 2rem;
+    color: #fff;
+}
+/* INPUT SECTION */
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form input{
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #000;
+    background:#c7d2fe;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+form button{
+    border: none;
+    background: #4f46e5;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px 0;
+    z-index: 1;
+}
+
+.note_empty img{
+    width: 150px;
+    z-index: -1;
+}
+.note_empty{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}

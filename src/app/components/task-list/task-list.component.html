@@ -1,0 +1,30 @@
+<section class="todo_list flex">
+    <div class="task-list">
+        <div class="header glossy">
+            <h2>on.time</h2>
+            <div class="add_new-task" (click)="toggleMenu()">
+                <i class="ri-add-line"></i>
+            </div>
+        </div>
+
+        <form *ngIf="isMenuOpen">
+            <input [(ngModel)]="taskTitle" name="task" placeholder="Add Task..." />
+            <button (click)="addTask(taskTitle)">Add</button>
+        </form>
+        <ng-container *ngIf="tasks.length != 0">
+            <ul>
+                <li *ngFor="let task of tasks">
+                    {{ task.title}}
+                    <button (click)="removeTask(task.id)"><i class="ri-delete-bin-fill"></i></button>
+                </li>
+            </ul>
+        </ng-container>
+
+        <ng-container *ngIf="tasks.length == 0">
+            <div class="note_empty">
+                <img src="./././assets/images/Note-image.png" alt="">
+                Your Note is Empty!
+            </div>
+        </ng-container>
+    </div>
+</section>
