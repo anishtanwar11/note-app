@@ -15,7 +15,8 @@
             <ul>
                 <li *ngFor="let task of tasks">
                     {{ task.title}}
-                    <button (click)="removeTask(task.id)"><i class="ri-delete-bin-fill"></i></button>
+                    <button (click)="removeTask(task.id)">
+                        <i class="ri-delete-bin-fill"></i></button>
                 </li>
             </ul>
         </ng-container>

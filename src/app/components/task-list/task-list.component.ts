@@ -1,6 +1,4 @@
-import { style } from '@angular/animations';
 import { Component, OnInit,Output, EventEmitter } from '@angular/core';
-import { from } from 'rxjs';
 import { Task } from 'src/app/Models/Task';
 import { TaskService } from 'src/app/services/task.service';
 @Component({

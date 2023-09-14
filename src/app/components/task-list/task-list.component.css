@@ -13,11 +13,11 @@
     align-items: center;
     padding: 30px 20px;
 }
-
 .task-list h2{
     width: 100%;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto'
+    , sans-serif;
     font-weight: 600;
     font-size: 2rem;
     text-align: left;
@@ -34,10 +34,10 @@
     margin-bottom: 10px;
     font-size: 1.1rem;
     color: #fff;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand'
+    , sans-serif;
     position: relative;
 }
-
 .task-list ul li button{
     position: absolute;
     bottom: 10px;
@@ -48,14 +48,12 @@
     color: #fff;
     cursor: pointer;
 }
-
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 30px;
-   
+    margin-bottom: 30px;  
 }
 
 .task-list .add_new-task{
@@ -92,7 +90,6 @@ form input{
     border-radius: 7px;
     outline: none;
 }
-
 form button{
     border: none;
     background: #4f46e5;
@@ -103,7 +100,6 @@ form button{
     padding: 15px 0;
     z-index: 1;
 }
-
 .note_empty img{
     width: 150px;
     z-index: -1;
